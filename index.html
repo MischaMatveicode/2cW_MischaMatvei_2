@@ -8,8 +8,20 @@
     body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Änderung: Hintergrund schwarz */
-    color: white; /* Textfarbe weiß */
+    color: white;
+    position: relative;
+}
+body::before {
+    content: "";
+    background: url('werbung.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.15; /* 🔥 Stärke der Verblendung */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 .main-header {
     background-color: white; /* Änderung: Balken weiß */
