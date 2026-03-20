@@ -13,14 +13,14 @@
 }
 body::before {
     content: "";
-    background: url('werbung.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('werbung.jpg') no-repeat center top;
+    background-size: contain;
     opacity: 0.15;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 150vh;
     z-index: -1;
 }
 .main-header {
