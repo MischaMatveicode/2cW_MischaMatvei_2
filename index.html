@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyr - Startseite</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    position: relative;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    background-color: black;
+    background-image: url('werbung.jpg');
+    background-repeat: no-repeat;
+    background-position: center top; 
+    background-size: contain;
+}
+.main-header {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    color: black; 
+    font-family: 'Arial Black', sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+.main-nav {
+    text-align: center;
+    background-color: #222; 
+    padding: 10px 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.main-nav a:hover {
+    color: #ffcc00; 
+}
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 20px;
+}
+footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-bottom: 20px;
+        }
+
+        .logo {
+            width: 450px;
+            height: auto;
+        }
+    .contact-form {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #ffcc00;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e6b800;
+}
+</style>
+</head>
+<body>
+<header class="main-header">
+    <h1>Valyr</h1>
+</header>
+<nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="caps.html">Caps</a>
+    <a href="muetzen.html">Mützen</a>
+    <a href="skullys.html">Skullys</a>
+</nav>
+<main>
+    <h2>Willkommen bei Valyr</h2>
+   <p>
+Entdecken sie unsere neuen Caps, Mützen und Skullys!<br><br>
+
+Wir von Valyr achten auf Qualität, Nachhaltigkeit und den besten Look.<br>
+Erfahren Sie mehr über nachhaltige Kleidung hier:
+<a href="https://www.wwf.de/aktiv-werden/tipps-fuer-den-alltag/nachhaltiger-konsum/nachhaltige-mode-gut-angezogen-gut-fuer-den-planeten" target="_blank">
+Nachhaltige Mode beim WWF
+</a>
+</p>
+
+
+    <div style="max-width:800px; margin: auto; border-radius:10px; overflow:hidden;">
+  <iframe 
+    width="100%" 
+    height="450"
+    src="https://www.youtube.com/embed/mqqgacDIU9E"
+    title="Nachhaltige & faire Mode"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+</main>
+<footer>
+<h2>Kontakt</h2>
+
+<form class="contact-form">
+    <input type="text" name="vorname" placeholder="Vorname" required>
+    <input type="text" name="nachname" placeholder="Nachname" required>
+    <input type="email" name="email" placeholder="E-Mail Adresse" required>
+    <textarea name="anliegen" placeholder="Dein Anliegen..." rows="5" required></textarea>
+    <button type="submit">Absenden</button>
+</form>
+</footer>
+</body>
+</html>
